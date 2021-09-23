@@ -4,7 +4,7 @@
 
 ```php
 use Lok0613\ExchangeRatesApiIo;
-use Lok0613\ExchangeRatesApiIo\Currency
+use Lok0613\ExchangeRatesApiIo\Currency;
 
 $exchange_rates_api_io = new ExchangeRatesApiIo('access-token');
 $rates = $exchange_rates_api_io->latestRates(new Currency('EUR'))->getRates();
