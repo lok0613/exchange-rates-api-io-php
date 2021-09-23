@@ -2,7 +2,7 @@
     "name": "lok0613/exchange-rates-api-io",
     "autoload": {
         "psr-4": {
-            "Lok0613\\ExchangeRatesApiIo\\": "src/"
+            "Lok0613\\": "src/"
         }
     },
     "authors": [
@@ -18,3 +18,4 @@
         "phpunit/phpunit": "^9"
     }
 }
+
