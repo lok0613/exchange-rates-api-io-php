@@ -1,0 +1,27 @@
+name: CI
+
+on: [push]
+
+jobs:
+  php-unit-tests:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        operating-system: ['ubuntu-latest']
+        php-versions: ['7.3']
+        phpunit-versions: ['latest']
+        include:
+          - operating-system: 'ubuntu-latest'
+            php-versions: '7.3'
+            
+    steps:
+      - uses: actions/checkout@v2
+      - uses: nanasess/setup-php@master
+        with:
+          php-version: '7.3'
+      - name: Update Composer
+        run: sudo composer self-update 2.1.8 --no-interaction
+      - name: Run Composer Install
+        run: composer install --no-interaction
+      - name: run tests
+        run: vendor/bin/phpunit tests
