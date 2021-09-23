@@ -4,11 +4,12 @@
 
 ```php
 use Lok0613\ExchangeRatesApiIo;
+use Lok0613\ExchangeRatesApiIo\Currency
 
 $exchange_rates_api_io = new ExchangeRatesApiIo('access-token');
 $rates = $exchange_rates_api_io->latestRates(new Currency('EUR'))->getRates();
-$rates[0]->getCurrency()->getName();
-# 'AED'
+$rates[0]->getCurrency()->getName(); // 'AED'
+$rates[0]->getRate(); // 4.306
 ```
 
 ## Installation
