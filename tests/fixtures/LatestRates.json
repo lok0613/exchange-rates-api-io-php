@@ -1,13 +1,11 @@
 {
     "success": true,
-    "timestamp": 1620345599,
-    "historical": true,
+    "timestamp": 1632387243,
     "base": "EUR",
-    "date": "2021-05-06",
+    "date": "2021-09-23",
     "rates": {
-        "AED": 4.431895,
-        "AFN": 93.504061,
-        "ALL": 123.369659
+        "AED": 4.306296,
+        "AFN": 102.349271,
+        "ALL": 121.767768
     }
 }
-
