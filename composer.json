@@ -1,0 +1,20 @@
+{
+    "name": "lok0613/exchange-rates-api-io",
+    "autoload": {
+        "psr-4": {
+            "Lok0613\\ExchangeRatesApiIo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Lok Chun Wai",
+            "email": "cwlok0613@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    }
+}
