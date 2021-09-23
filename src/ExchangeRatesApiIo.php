@@ -74,6 +74,28 @@ class ExchangeRatesApiIo
     }
 
     /**
+     * Get historical rates
+     * 
+     * @param Currency $base_currency
+     * @param DateTime $date
+     * @param [Currency] $symbols
+     * 
+     * @return Response
+     */
+    public function historicalRates(Currency $base_currency, \DateTime $date, array $symbols = []): Response
+    {
+        $params = ['base' => $base_currency->getName()];
+
+        if ($symbols == []) {
+            # do nothing
+        } else {
+            $params['symbols'] = implode($symbols, ",");
+        }
+
+        return new Response($this->request($date->format('Y-m-d'), $params));
+    }
+
+    /**
      * Request API with HTTP client
      * 
      * @param string @endpoint, partial endpoint without $base_url
