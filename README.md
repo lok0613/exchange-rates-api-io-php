@@ -14,13 +14,16 @@ $rates[0]->getRate(); // 4.306
 
 ## Installation
 
-The recommended way to install Guzzle is through
-[Composer](https://getcomposer.org/).
+```bash
+~$ composer require lok0613/exchange-rates-api-io
+```
+
+## Test
 
 ```bash
-composer require lok0613/exchange-rates-api-io
+~$ ./vendor/bin/phpunit tests
 ```
 
 ## License
 
-Guzzle is made available under the MIT License (MIT). Please see [License File](LICENSE) for more information.
+ExchangeRatesApiIO is made available under the MIT License (MIT). Please see [License File](LICENSE) for more information.
